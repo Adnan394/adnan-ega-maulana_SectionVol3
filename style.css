@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  background: rgb(22, 22, 22);
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+.nav-link:hover {
+  transform: translateY(-10px);
+  transition: 0.3s;
+  border-bottom: 3px solid #b4ea43;
+  position: relative;
+}
+
+a .btn:hover {
+  background: transparent;
+  border: 3px solid #b4ea43;
+}
+
+.navbar {
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+}
+.navbar-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 50px;
+  background-color: rgba(255, 255, 255, 0.01);
+  /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.01); */
+}
+
+.hero {
+  height: 100vh;
+  background: rgb(22, 22, 22);
+  display: flex;
+  justify-content: end;
+  /* padding-top: 80px; */
+  /* overflow: hidden; */
+}
+
+.hero-content {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  color: white;
+  z-index: 1;
+}
+
+.hero img {
+  position: absolute;
+  width: 98vw;
+  top: 80px;
+}
+
+.rental {
+  /* display: flex; */
+  color: white;
+  /* padding-top: 200px; */
+  padding: 150px 50px 0 50px;
+}
+
+.container-rental {
+  display: flex;
+  flex: row;
+  justify-content: center;
+}
+.rental-text {
+  width: 60%;
+  color: white;
+  float: left;
+}
+
+.rental-images {
+  width: 40%;
+  right: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  gap: 10px;
+}
+
+.keunggulan {
+  padding: 100px 50px 0 50px;
+  color: white;
+}
