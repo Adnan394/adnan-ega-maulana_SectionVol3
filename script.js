@@ -12,16 +12,22 @@ hero.onmousemove = function (e) {
 // on load
 let paint = document.getElementById("paint");
 let navimg = document.getElementById("navimg");
+let navimg2 = document.getElementById("navimg2");
 let navbtn = document.getElementById("navbtn");
+let navbtn2 = document.getElementById("navbtn2");
 window.onload = () => {
   navimg.style.transform = "translateY(0)";
   navimg.style.opacity = "1";
+  navimg2.style.transform = "translateY(0)";
+  navimg2.style.opacity = "1";
   document.querySelectorAll(".nav-items").forEach(function (nav) {
     nav.style.transform = "translateY(0)";
     nav.style.opacity = "1";
   });
   navbtn.style.transform = "translateY(0)";
   navbtn.style.opacity = "1";
+  navbtn2.style.transform = "translateY(0)";
+  navbtn2.style.opacity = "1";
   document.querySelectorAll(".hero-items").forEach(function (hero) {
     hero.style.transform = "translateY(0)";
     hero.style.opacity = "1";
@@ -103,7 +109,7 @@ window.addEventListener("scroll", () => {
   }
   let unggultext4 = document.querySelector("#keunggulan-text4");
   let unggulimg4 = document.querySelector("#keunggulan-img4");
-  if (scroll > 1400) {
+  if (scroll > 1500) {
     unggultext4.style.transform = "translateX(0)";
     unggultext4.style.opacity = "1";
     unggulimg4.style.transform = "translateX(0)";
@@ -113,5 +119,43 @@ window.addEventListener("scroll", () => {
     unggultext4.style.opacity = "0";
     unggulimg4.style.transform = "translateX(-100px)";
     unggulimg4.style.opacity = "0";
+  }
+
+  if (scroll > 1900 && scroll < 3400) {
+    let mobil = document.getElementById("mobil");
+    mobil.style.transform = "translateY(" + (scroll - 1800) + "px)";
+  }
+
+  if (scroll > 1900) {
+    let jenistext1 = document.getElementById("jenis-text1");
+    let jenisimg1 = document.getElementById("jenis-img1");
+    jenistext1.style.transform = "rotate(0) translate(0)";
+    jenistext1.style.opacity = "1";
+    jenisimg1.style.transform = "rotate(0) translate(0)";
+    jenisimg1.style.opacity = "1";
+  }
+  if (scroll > 2200) {
+    let jenistext2 = document.getElementById("jenis-text2");
+    let jenisimg2 = document.getElementById("jenis-img2");
+    jenistext2.style.transform = "rotate(0) translate(0)";
+    jenistext2.style.opacity = "1";
+    jenisimg2.style.transform = "rotate(0) translate(0)";
+    jenisimg2.style.opacity = "1";
+  }
+  if (scroll > 2500) {
+    let jenistext3 = document.getElementById("jenis-text3");
+    let jenisimg3 = document.getElementById("jenis-img3");
+    jenistext3.style.transform = "rotate(0) translate(0)";
+    jenistext3.style.opacity = "1";
+    jenisimg3.style.transform = "rotate(0) translate(0)";
+    jenisimg3.style.opacity = "1";
+  }
+  if (scroll > 2900) {
+    let jenistext4 = document.getElementById("jenis-text4");
+    let jenisimg4 = document.getElementById("jenis-img4");
+    jenistext4.style.transform = "rotate(0) translate(0)";
+    jenistext4.style.opacity = "1";
+    jenisimg4.style.transform = "rotate(0) translate(0)";
+    jenisimg4.style.opacity = "1";
   }
 });

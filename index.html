@@ -8,18 +8,19 @@
     <title>GARENT | Rental Mobil</title>
   </head>
   <body>
-    <div class="navbar">
+    <!-- navbar large  -->
+    <div class="navbar navbar1">
       <div class="navbar-nav">
         <img src="./assets/logo2.png" width="150px" alt="" style="transform: translateY(-50px); transition: 1s; opacity: 0" id="navimg" />
         <ul style="list-style: none; display: flex; gap: 24px; font-weight: 600">
           <a href="/" class="nav-link"><li class="nav-items" style="transform: translateY(-50px); transition: 1s; transition-delay: 0.1s; opacity: 0">Beranda</li></a>
           <a href="#rental" class="nav-link"><li class="nav-items" style="transform: translateY(-50px); transition: 1s; transition-delay: 0.2s; opacity: 0">Rental</li></a>
           <a href="#keunggulan" class="nav-link"><li class="nav-items" style="transform: translateY(-50px); transition: 1s; transition-delay: 0.4s; opacity: 0">Keunggulan</li></a>
-          <a href="" class="nav-link"><li class="nav-items" style="transform: translateY(-50px); transition: 1s; transition-delay: 0.3s; opacity: 0">Jenis Mobil</li></a>
+          <a href="#jenis" class="nav-link"><li class="nav-items" style="transform: translateY(-50px); transition: 1s; transition-delay: 0.3s; opacity: 0">Jenis Mobil</li></a>
           <a href="" class="nav-link"><li class="nav-items" style="transform: translateY(-50px); transition: 1s; transition-delay: 0.5s; opacity: 0">Kontak</li></a>
           <a href="" class="nav-link"><li class="nav-items" style="transform: translateY(-50px); transition: 1s; transition-delay: 0.6s; opacity: 0">Tentang</li></a>
         </ul>
-        <a href="" target="_blank"
+        <a href="#pesan"
           ><button
             ty
             class="btn"
@@ -28,6 +29,29 @@
             id="navbtn"
           >
             Sewa Sekarang
+          </button></a
+        >
+      </div>
+    </div>
+
+    <!-- navbar mobile  -->
+    <div class="navbar navbar2" style="display: none">
+      <div class="navbar-nav">
+        <img src="./assets/logo2.png" width="150px" alt="" style="transform: translateY(-50px); transition: 1s; opacity: 0" id="navimg2" />
+        <ul style="list-style: none; display: flex; gap: 24px; font-weight: 600">
+          <a href="/" class="nav-link"><li class="nav-items" style="transform: translateY(-50px); transition: 1s; transition-delay: 0.1s; opacity: 0">Beranda</li></a>
+          <a href="#jenis" class="nav-link"><li class="nav-items" style="transform: translateY(-50px); transition: 1s; transition-delay: 0.3s; opacity: 0">Jenis Mobil</li></a>
+          <a href="" class="nav-link"><li class="nav-items" style="transform: translateY(-50px); transition: 1s; transition-delay: 0.5s; opacity: 0">Kontak</li></a>
+        </ul>
+        <a href="" target="_blank"
+          ><button
+            ty
+            class="btn"
+            pe="button"
+            style="background-color: #b4ea43; padding: 10px 20px; border: none; border-radius: 10px; font-weight: 600; transform: translateY(-50px); transition: 1s; transition-delay: 0.7s; opacity: 0"
+            id="navbtn2"
+          >
+            Sewa
           </button></a
         >
       </div>
@@ -49,7 +73,7 @@
           class="btn"
           style="transform: translateY(-50px); transition: 1s; transition-delay: 1.1s; opacity: 0; margin-right: 60%; background-color: #b4ea43; padding: 10px 20px; border: none; border-radius: 10px; font-weight: 600"
         >
-          <a href="" style="color: black">Hubungi Kami</a>
+          <a href="#pesan" style="color: black">Hubungi Kami</a>
         </button>
       </div>
     </div>
@@ -80,18 +104,15 @@
         <img src="./assets/map.png" alt="" width="350px" id="keunggulan-img" style="transform: translateX(-100px); opacity: 0; transition: 1s; transition-delay: 0.3s" />
         <div style="transform: translateX(100px); opacity: 0; transition: 1s; transition-delay: 0.3s; margin-left: 50px" id="keunggulan-text">
           <h3 style="margin-bottom: 20px; color: #b4ea43">Tersebar Di Kota Besar</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt facilis voluptate, sapiente exercitationem illum dignissimos asperiores perferendis non labore quasi, beatae autem explicabo est placeat deserunt provident. In, eius
-            explicabo optio alias suscipit impedit tempora eveniet perspiciatis quia earum incidunt animi deleniti accusantium rerum pariatur voluptatibus dolores adipisci velit magnam!
-          </p>
+          <p>GARENT menjadi solusi dalam menyewa Mobil, dengan tersebarnya di kota besar khususnya di daerah jawa, menjadi rekomendasi disaat anda membutuhkan kendaraan untuk keperluan anda.</p>
         </div>
       </div>
       <div class="unggulan" style="display: flex; align-items: center">
         <div style="transform: translateX(100px); opacity: 0; transition: 1s; transition-delay: 0.3s" id="keunggulan-text2">
-          <h3 style="margin-bottom: 20px; color: #b4ea43">Tersebar Di Kota Besar</h3>
+          <h3 style="margin-bottom: 20px; color: #b4ea43">Delivery (Diantar ke rumah anda)</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt facilis voluptate, sapiente exercitationem illum dignissimos asperiores perferendis non labore quasi, beatae autem explicabo est placeat deserunt provident. In, eius
-            explicabo optio alias suscipit impedit tempora eveniet perspiciatis quia earum incidunt animi deleniti accusantium rerum pariatur voluptatibus dolores adipisci velit magnam!
+            GARENT mengutamakan kenyamanan pelanggan, dengan adanya kebijakan ini menjadi salah satu keunggulan yang kami banggakan. Delivery ini membantu pelanggan agar tidak repot untuk mendatangi gerai kami, karena pelanggan bisa
+            memesan/menyewa dan akan diantarkan oleh pihak GARENT agar dikirimkan ke rumah pelanggan/tujuan.
           </p>
         </div>
         <img src="./assets/delivery.png" alt="" width="400px" id="keunggulan-img2" style="transform: translateX(100px); opacity: 0; transition: 1s; transition-delay: 0.3s" />
@@ -99,24 +120,99 @@
       <div class="unggulan" style="display: flex; align-items: center">
         <img src="./assets/best.png" alt="" width="350px" id="keunggulan-img3" style="transform: translateX(-100px); opacity: 0; transition: 1s; transition-delay: 0.3s" />
         <div style="transform: translateX(100px); opacity: 0; transition: 1s; transition-delay: 0.3s; margin-left: 50px" id="keunggulan-text3">
-          <h3 style="margin-bottom: 20px; color: #b4ea43">Tersebar Di Kota Besar</h3>
+          <h3 style="margin-bottom: 20px; color: #b4ea43">Menjadi Rekomendasi No 1</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt facilis voluptate, sapiente exercitationem illum dignissimos asperiores perferendis non labore quasi, beatae autem explicabo est placeat deserunt provident. In, eius
-            explicabo optio alias suscipit impedit tempora eveniet perspiciatis quia earum incidunt animi deleniti accusantium rerum pariatur voluptatibus dolores adipisci velit magnam!
+            GARENT menjadi kan rekomendasi anda dalam solusi penyewaan mobil yang tersebar luas di kota kota besar, sudah banyak review kami yang sangat puas dengan pelayanan yang diberikan oleh GARENT sebagai perusahaan yang sangat
+            membantu dalam melayani pelanggan kami.
           </p>
         </div>
       </div>
       <div class="unggulan" style="display: flex; align-items: center">
         <div style="transform: translateX(100px); opacity: 0; transition: 1s; transition-delay: 0.3s" id="keunggulan-text4">
-          <h3 style="margin-bottom: 20px; color: #b4ea43">Tersebar Di Kota Besar</h3>
+          <h3 style="margin-bottom: 20px; color: #b4ea43">Terdapat Banyak Pilihan Mobil</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt facilis voluptate, sapiente exercitationem illum dignissimos asperiores perferendis non labore quasi, beatae autem explicabo est placeat deserunt provident. In, eius
-            explicabo optio alias suscipit impedit tempora eveniet perspiciatis quia earum incidunt animi deleniti accusantium rerum pariatur voluptatibus dolores adipisci velit magnam!
+            GARENT memeberikan berbagai jenis mobil yang dapat disewakan. dari mobil angkut, mobil keluarga, mobil serbaguna, sport, dan lain sebagainya. harga dari masing masing jenis mobil bervarisi tetapi tidak menjadikan harga sewa
+            menjadi mahal, kami sangat mempertimbangkan kenyamanan pelanggan sebagai tujuan utama kami.
           </p>
         </div>
         <img src="./assets/pilihan.png" alt="" width="400px" id="keunggulan-img4" style="transform: translateX(100px); opacity: 0; transition: 1s; transition-delay: 0.3s" />
       </div>
     </div>
+
+    <div class="mobil">
+      <img src="./assets/mobil.png" alt="" width="100px" id="mobil" />
+    </div>
+
+    <div class="jenis" id="jenis" style="margin-bottom: 200px">
+      <div class="jenis-items" style="padding-top: 100px">
+        <img src="./assets/serbaguna/avanza.png" alt="" width="400px" id="jenis-img1" style="transform: rotate(25deg) translateX(-50px); opacity: 0; transition: 1s" />
+        <div id="jenis-text1" style="width: 40%; transform: rotate(-25deg) translateX(50px); opacity: 0; transition: 1s">
+          <h3 style="color: #b4ea43">Mobil Serbaguna</h3>
+          <p style="color: white">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur reiciendis veniam laboriosam accusantium ullam id illo earum, ipsum distinctio, sequi laudantium. Tenetur debitis minima delectus? Facere aut, amet quasi
+            molestiae ducimus asperiores praesentium velit odit quae excepturi consequatur? Voluptate eos sunt fugit quis molestiae, magnam ipsa repudiandae dolorum ut laborum.
+          </p>
+        </div>
+      </div>
+      <div class="jenis-items">
+        <div id="jenis-text2" style="width: 40%; transform: rotate(25deg) translateX(-50px); opacity: 0; transition: 1s">
+          <h3 style="color: #b4ea43">Mobil Sedan</h3>
+          <p style="color: white">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur reiciendis veniam laboriosam accusantium ullam id illo earum, ipsum distinctio, sequi laudantium. Tenetur debitis minima delectus? Facere aut, amet quasi
+            molestiae ducimus asperiores praesentium velit odit quae excepturi consequatur? Voluptate eos sunt fugit quis molestiae, magnam ipsa repudiandae dolorum ut laborum.
+          </p>
+        </div>
+        <img src="./assets/sedan/civic.png" alt="" width="400px" id="jenis-img2" style="transform: rotate(-25deg) translateX(50px); opacity: 0; transition: 1s" />
+      </div>
+      <div class="jenis-items">
+        <img src="./assets/sport/pajero.png" id="jenis-img3" style="transform: rotate(25deg) translateX(-50px); opacity: 0; transition: 1s" alt="" width="400px" />
+        <div id="jenis-text3" style="width: 40%; transform: rotate(-25deg) translateX(50px); opacity: 0; transition: 1s">
+          <h3 style="color: #b4ea43">Mobil Sport</h3>
+          <p style="color: white">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur reiciendis veniam laboriosam accusantium ullam id illo earum, ipsum distinctio, sequi laudantium. Tenetur debitis minima delectus? Facere aut, amet quasi
+            molestiae ducimus asperiores praesentium velit odit quae excepturi consequatur? Voluptate eos sunt fugit quis molestiae, magnam ipsa repudiandae dolorum ut laborum.
+          </p>
+        </div>
+      </div>
+      <div class="jenis-items">
+        <div id="jenis-text4" style="width: 40%; transform: rotate(25deg) translateX(-50px); opacity: 0; transition: 1s">
+          <h3 style="color: #b4ea43">Mobil Angkut</h3>
+          <p style="color: white">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur reiciendis veniam laboriosam accusantium ullam id illo earum, ipsum distinctio, sequi laudantium. Tenetur debitis minima delectus? Facere aut, amet quasi
+            molestiae ducimus asperiores praesentium velit odit quae excepturi consequatur? Voluptate eos sunt fugit quis molestiae, magnam ipsa repudiandae dolorum ut laborum.
+          </p>
+        </div>
+        <img src="./assets/angkut/isuzu truck.png" id="jenis-img4" alt="" width="400px" style="transform: rotate(-25deg) translateX(50px); opacity: 0; transition: 1s" />
+      </div>
+    </div>
+
+    <div class="pesan" style="padding: 50px" id="pesan">
+      <h1 style="color: #b4ea43; text-align: center; margin-bottom: 20px">Sewa Sekarang</h1>
+      <form action="">
+        <div class="row" style="display: flex; gap: 20px; justify-content: center; margin-bottom: 20px">
+          <input type="text" style="width: 40%; height: 25px" placeholder="Masukan Nama" />
+          <input type="number" style="width: 40%; height: 25px" placeholder="Masukan No Wa" />
+        </div>
+        <div class="row" style="display: flex; gap: 20px; justify-content: center; margin-bottom: 20px">
+          <input type="text" style="width: 40%; height: 25px" placeholder="Masukan Email" />
+          <input type="text" style="width: 40%; height: 25px" placeholder="Masukan Kebutuhan" />
+        </div>
+        <div class="row" style="display: flex; gap: 20px; justify-content: center; margin-bottom: 20px">
+          <input type="date" style="width: 40%; height: 25px" placeholder="Tanggal Pinjam" />
+          <input type="date" style="width: 40%; height: 25px" placeholder="Tanggal Kembali" />
+        </div>
+        <div class="row" style="display: flex; gap: 20px; justify-content: center; margin-bottom: 20px">
+          <input type="text" style="width: 40%; height: 25px" placeholder="Masukan Alamat" />
+        </div>
+        <div class="row" style="display: flex; justify-content: center">
+          <button style="background-color: #b4ea43; width: 150px; height: 30px; border: none; border-radius: 20px">Sewa Sekarang</button>
+        </div>
+      </form>
+    </div>
+
+    <footer style="height: 100px; background-color: #b4ea43; display: flex; justify-content: center; align-items: center">
+      <p>&copy Copyright by @adnan</p>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
