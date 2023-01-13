@@ -38,7 +38,7 @@ window.onload = () => {
 let herocontent = document.querySelector(".hero-content");
 window.addEventListener("scroll", () => {
   let scroll = window.pageYOffset;
-  console.log(scroll);
+  // console.log(scroll);
   herocontent.style.transform = "translateX(" + scroll + "px) translateY(" + scroll + "px)";
 
   let rentaltext = document.querySelector("#rental-text");
@@ -142,7 +142,7 @@ window.addEventListener("scroll", () => {
     jenisimg2.style.transform = "rotate(0) translate(0)";
     jenisimg2.style.opacity = "1";
   }
-  if (scroll > 2500) {
+  if (scroll > 2600) {
     let jenistext3 = document.getElementById("jenis-text3");
     let jenisimg3 = document.getElementById("jenis-img3");
     jenistext3.style.transform = "rotate(0) translate(0)";
@@ -150,7 +150,7 @@ window.addEventListener("scroll", () => {
     jenisimg3.style.transform = "rotate(0) translate(0)";
     jenisimg3.style.opacity = "1";
   }
-  if (scroll > 2900) {
+  if (scroll > 3000) {
     let jenistext4 = document.getElementById("jenis-text4");
     let jenisimg4 = document.getElementById("jenis-img4");
     jenistext4.style.transform = "rotate(0) translate(0)";
@@ -159,3 +159,9 @@ window.addEventListener("scroll", () => {
     jenisimg4.style.opacity = "1";
   }
 });
+
+// let w = window.innerWidth;
+// let navbar = document.getElementById("navbar2");
+// if (w < 550) {
+//   navbtn2.style.transform = "translateY(0)";
+// }

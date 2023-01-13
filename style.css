@@ -31,7 +31,7 @@ a .btn:hover {
 .navbar {
   width: 100%;
   position: fixed;
-  z-index: 2;
+  z-index: 9999;
 }
 .navbar-nav {
   display: flex;
@@ -114,16 +114,124 @@ a .btn:hover {
 .jenis-items {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 50px;
   margin-bottom: 150px;
 }
 
-@media only screen and (max-width: 500px) {
-  .navbar1 {
+.contact {
+  padding: 50px;
+}
+
+@media screen and (max-width: 500px) {
+  .hero-content {
+    width: 100%;
+    padding: 0 30px;
+  }
+
+  .hero img {
     display: none;
+  }
+
+  .container-rental {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-rental .rental-text {
+    width: 100%;
+  }
+  .container-rental .rental-images {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+  }
+  .container-rental .rental-images .rental-img {
+    width: 50px;
+  }
+
+  .unggulan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  #keunggulan-img {
+    width: 200px;
+  }
+  .unggulan #keunggulan-text {
+    margin-right: 50px;
+    padding: 0;
+    width: 100%;
+  }
+  .unggulan #keunggulan-text3 {
+    margin-right: 50px;
+    padding: 0;
+    width: 100%;
+  }
+
+  .mobil {
+    display: none;
+  }
+
+  .jenis-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  #jenis-img1 {
+    display: none;
+  }
+  #jenis-img2 {
+    display: none;
+  }
+  #jenis-img3 {
+    display: none;
+  }
+  #jenis-img4 {
+    display: none;
+  }
+  .jenis .jenis-items .jenis-text p {
+    width: 100%;
+  }
+
+  #jenis-text3 {
+    width: 100%;
+    margin: 0;
+  }
+
+  .maps {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  #navimg {
+    width: 80px;
+  }
+
+  .navbar-nav {
+    padding: 10px;
+  }
+  .navbar-nav ul a li {
     font-size: 12px;
   }
-  .navbar2 {
-    display: block;
+  #navren {
+    display: none;
+  }
+  #navber {
+    display: none;
+  }
+  #navten {
+    display: none;
+  }
+
+  #navbtn {
+    display: none;
   }
 }

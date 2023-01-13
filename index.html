@@ -9,16 +9,16 @@
   </head>
   <body>
     <!-- navbar large  -->
-    <div class="navbar navbar1">
+    <div class="navbar" id="navbar1">
       <div class="navbar-nav">
         <img src="./assets/logo2.png" width="150px" alt="" style="transform: translateY(-50px); transition: 1s; opacity: 0" id="navimg" />
         <ul style="list-style: none; display: flex; gap: 24px; font-weight: 600">
-          <a href="/" class="nav-link"><li class="nav-items" style="transform: translateY(-50px); transition: 1s; transition-delay: 0.1s; opacity: 0">Beranda</li></a>
-          <a href="#rental" class="nav-link"><li class="nav-items" style="transform: translateY(-50px); transition: 1s; transition-delay: 0.2s; opacity: 0">Rental</li></a>
+          <a href="/" id="navber" class="nav-link"><li class="nav-items" style="transform: translateY(-50px); transition: 1s; transition-delay: 0.1s; opacity: 0">Beranda</li></a>
+          <a href="#rental" id="navren" class="nav-link"><li class="nav-items" style="transform: translateY(-50px); transition: 1s; transition-delay: 0.2s; opacity: 0">Rental</li></a>
           <a href="#keunggulan" class="nav-link"><li class="nav-items" style="transform: translateY(-50px); transition: 1s; transition-delay: 0.4s; opacity: 0">Keunggulan</li></a>
           <a href="#jenis" class="nav-link"><li class="nav-items" style="transform: translateY(-50px); transition: 1s; transition-delay: 0.3s; opacity: 0">Jenis Mobil</li></a>
-          <a href="" class="nav-link"><li class="nav-items" style="transform: translateY(-50px); transition: 1s; transition-delay: 0.5s; opacity: 0">Kontak</li></a>
-          <a href="" class="nav-link"><li class="nav-items" style="transform: translateY(-50px); transition: 1s; transition-delay: 0.6s; opacity: 0">Tentang</li></a>
+          <a href="#kontak" class="nav-link"><li class="nav-items" style="transform: translateY(-50px); transition: 1s; transition-delay: 0.5s; opacity: 0">Kontak</li></a>
+          <a href="#rental" id="navten" class="nav-link"><li class="nav-items" style="transform: translateY(-50px); transition: 1s; transition-delay: 0.6s; opacity: 0">Tentang</li></a>
         </ul>
         <a href="#pesan"
           ><button
@@ -35,13 +35,13 @@
     </div>
 
     <!-- navbar mobile  -->
-    <div class="navbar navbar2" style="display: none">
+    <div class="navbar" id="navbar2" style="transform: translateY(-400px)">
       <div class="navbar-nav">
         <img src="./assets/logo2.png" width="150px" alt="" style="transform: translateY(-50px); transition: 1s; opacity: 0" id="navimg2" />
         <ul style="list-style: none; display: flex; gap: 24px; font-weight: 600">
-          <a href="/" class="nav-link"><li class="nav-items" style="transform: translateY(-50px); transition: 1s; transition-delay: 0.1s; opacity: 0">Beranda</li></a>
-          <a href="#jenis" class="nav-link"><li class="nav-items" style="transform: translateY(-50px); transition: 1s; transition-delay: 0.3s; opacity: 0">Jenis Mobil</li></a>
-          <a href="" class="nav-link"><li class="nav-items" style="transform: translateY(-50px); transition: 1s; transition-delay: 0.5s; opacity: 0">Kontak</li></a>
+          <a href="/" class="nav-link2"><li class="nav-items" style="transform: translateY(-50px); transition: 1s; transition-delay: 0.1s; opacity: 0">Beranda</li></a>
+          <a href="#jenis" class="nav-link2"><li class="nav-items" style="transform: translateY(-50px); transition: 1s; transition-delay: 0.3s; opacity: 0">Jenis Mobil</li></a>
+          <a href="" class="nav-link2"><li class="nav-items" style="transform: translateY(-50px); transition: 1s; transition-delay: 0.5s; opacity: 0">Kontak</li></a>
         </ul>
         <a href="" target="_blank"
           ><button
@@ -83,8 +83,8 @@
       <div class="container-rental">
         <div class="rental-text">
           <p id="rental-text" style="transform: rotate(25deg) translateX(-50px); opacity: 0; transition: 1s">
-            GARENT melayani jasa Rental Mobil dengan jenis terlengkap, mulai dari mobil sebaguna, mobil sport, mobil angkut, truk, bis, dan sebagainya. GARENT tersedia di 6 Kota besar di Jawa dengan kemudahan dan kualitas layanan maupun
-            mobil, menjadika GARENT sebagai penyedia jasa Rental yang dapat dipercaya dan pemesanan dilakukan secara online.
+            GARENT melayani jasa Rental Mobil dengan jenis terlengkap, mulai dari mobil sebaguna, mobil sport, mobil angkut, truk, bis, dan sebagainya. GARENT tersedia di 6 Kota besar di Jawa seperti Jakarta, Yogyakarta, Bandung, Semarang,
+            Surabaya, Purwokerto. dengan kemudahan dan kualitas layanan maupun mobil, menjadikan GARENT sebagai penyedia jasa Rental yang dapat dipercaya dan pemesanan dilakukan secara online.
           </p>
         </div>
         <div class="rental-images">
@@ -146,40 +146,40 @@
     <div class="jenis" id="jenis" style="margin-bottom: 200px">
       <div class="jenis-items" style="padding-top: 100px">
         <img src="./assets/serbaguna/avanza.png" alt="" width="400px" id="jenis-img1" style="transform: rotate(25deg) translateX(-50px); opacity: 0; transition: 1s" />
-        <div id="jenis-text1" style="width: 40%; transform: rotate(-25deg) translateX(50px); opacity: 0; transition: 1s">
+        <div id="jenis-text1" class="jenis-text" style="width: 40%; transform: rotate(-25deg) translateX(50px); opacity: 0; transition: 1s">
           <h3 style="color: #b4ea43">Mobil Serbaguna</h3>
           <p style="color: white">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur reiciendis veniam laboriosam accusantium ullam id illo earum, ipsum distinctio, sequi laudantium. Tenetur debitis minima delectus? Facere aut, amet quasi
-            molestiae ducimus asperiores praesentium velit odit quae excepturi consequatur? Voluptate eos sunt fugit quis molestiae, magnam ipsa repudiandae dolorum ut laborum.
+            Mobil serbaguna adalah mobil yang dapat dipakai pada situasi apapun, bisa untuk keluarga, travel, angkut dan lain sebagainya. mobil sebaguna juga banyak diminati dikalangan orang dewasa karena banyak kegunaan yang dimiliki oleh
+            mobil jenis ini. kami menyediakan beberapa jenis mobil diantarnya adalah avanza, alphard, inova, xenia, dan lain sebagainya.
           </p>
         </div>
       </div>
       <div class="jenis-items">
-        <div id="jenis-text2" style="width: 40%; transform: rotate(25deg) translateX(-50px); opacity: 0; transition: 1s">
+        <div id="jenis-text2" class="jenis-text" style="width: 40%; transform: rotate(25deg) translateX(-50px); opacity: 0; transition: 1s">
           <h3 style="color: #b4ea43">Mobil Sedan</h3>
           <p style="color: white">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur reiciendis veniam laboriosam accusantium ullam id illo earum, ipsum distinctio, sequi laudantium. Tenetur debitis minima delectus? Facere aut, amet quasi
-            molestiae ducimus asperiores praesentium velit odit quae excepturi consequatur? Voluptate eos sunt fugit quis molestiae, magnam ipsa repudiandae dolorum ut laborum.
+            mobil sedan menjadi populer dikalangan orang dewasa terutama di daerah perkotaan, karena bentuknya yang simple dan keren menjadikan mobil ini sangat enak untuk bepergian di dalam kota ataupun bekerja. kami menyediakan beberapa
+            jenis mobil sedan diantarnya adalah Camri, Civic, CR-V, Jazz, Vios, dan lain sebagainya.
           </p>
         </div>
         <img src="./assets/sedan/civic.png" alt="" width="400px" id="jenis-img2" style="transform: rotate(-25deg) translateX(50px); opacity: 0; transition: 1s" />
       </div>
       <div class="jenis-items">
         <img src="./assets/sport/pajero.png" id="jenis-img3" style="transform: rotate(25deg) translateX(-50px); opacity: 0; transition: 1s" alt="" width="400px" />
-        <div id="jenis-text3" style="width: 40%; transform: rotate(-25deg) translateX(50px); opacity: 0; transition: 1s">
+        <div id="jenis-text3" class="jenis-text" style="width: 40%; transform: rotate(-25deg) translateX(50px); opacity: 0; transition: 1s">
           <h3 style="color: #b4ea43">Mobil Sport</h3>
           <p style="color: white">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur reiciendis veniam laboriosam accusantium ullam id illo earum, ipsum distinctio, sequi laudantium. Tenetur debitis minima delectus? Facere aut, amet quasi
-            molestiae ducimus asperiores praesentium velit odit quae excepturi consequatur? Voluptate eos sunt fugit quis molestiae, magnam ipsa repudiandae dolorum ut laborum.
+            mobil sport adalah mobil yang banyak diminati akhir akhir ini karena desainya yang memanjakan mata dan super kencang menjadikan mobil ini sangat cocok untuk bepergain keluar kota maupun dalam kota. untuk mobil sultan ini juga
+            snagat dicari oleh pelanggan untuk mencoba sensasi menaiki mobil sport. kami menyediakan beberapa jenis mobil sport diantarnya adalah Fortuner, Pajero, Rush, dan lain sebagainya.
           </p>
         </div>
       </div>
       <div class="jenis-items">
-        <div id="jenis-text4" style="width: 40%; transform: rotate(25deg) translateX(-50px); opacity: 0; transition: 1s">
+        <div id="jenis-text4" class="jenis-text" style="width: 40%; transform: rotate(25deg) translateX(-50px); opacity: 0; transition: 1s">
           <h3 style="color: #b4ea43">Mobil Angkut</h3>
           <p style="color: white">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur reiciendis veniam laboriosam accusantium ullam id illo earum, ipsum distinctio, sequi laudantium. Tenetur debitis minima delectus? Facere aut, amet quasi
-            molestiae ducimus asperiores praesentium velit odit quae excepturi consequatur? Voluptate eos sunt fugit quis molestiae, magnam ipsa repudiandae dolorum ut laborum.
+            mobil angkut adalah mobil yang biasanya digunakan untuk mengangkut barang ataupun penumpang, mobil jenis ini sangat diminati oleh para pekerja maupun orang yang sedang ingni pindahan atau mengangkut sebuah barang dalam jumlah
+            banyak. kami menyediakan beberapa jenis mobil ini diantarnya adalah Bis, Isuzu Truck, Isuzu, dan lain sebagainya.
           </p>
         </div>
         <img src="./assets/angkut/isuzu truck.png" id="jenis-img4" alt="" width="400px" style="transform: rotate(-25deg) translateX(50px); opacity: 0; transition: 1s" />
@@ -187,7 +187,7 @@
     </div>
 
     <div class="pesan" style="padding: 50px" id="pesan">
-      <h1 style="color: #b4ea43; text-align: center; margin-bottom: 20px">Sewa Sekarang</h1>
+      <h1 style="color: white; text-align: center; margin-bottom: 20px"><span style="color: #b4ea43">Sewa </span>Sekarang</h1>
       <form action="">
         <div class="row" style="display: flex; gap: 20px; justify-content: center; margin-bottom: 20px">
           <input type="text" style="width: 40%; height: 25px" placeholder="Masukan Nama" />
@@ -210,8 +210,53 @@
       </form>
     </div>
 
-    <footer style="height: 100px; background-color: #b4ea43; display: flex; justify-content: center; align-items: center">
-      <p>&copy Copyright by @adnan</p>
+    <!-- <div class="gallery">
+      <h1 style="text-align: center; color: white"><span style="color: #b4ea43">Our </span>Gallery</h1>
+      <img src="./assets/serbaguna/alphard.jpg" alt="" width="100px" />
+      <img src="./assets/serbaguna/avanza.png" alt="" width="100px" />
+      <img src="./assets/serbaguna/inova.png" alt="" width="100px" />
+      <img src="./assets/serbaguna/xenia.png" alt="" width="100px" />
+    </div> -->
+
+    <div class="contact" id="kontak" style="color: white; background-color: rgb(46, 46, 46); display: flex; flex-wrap: wrap; justify-content: center">
+      <div class="maps" style="width: 250px">
+        <strong>Alamat</strong>
+        <br />
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.6523314837355!2d109.23459461400783!3d-7.392798174831966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e655f00847c5521%3A0x1bed0a9070c17f74!2sPing%20Onlineshop!5e0!3m2!1sid!2sid!4v1673614738736!5m2!1sid!2sid"
+          width="200"
+          height="100"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <p>Banyumas, Perumahan Citra Pratama No.12A, Sumampir, Purwokerto Utara, Sumampir Kulon, Sumampir, Kec. Purwokerto Utara, Kabupaten Banyumas, Jawa Tengah 53125</p>
+      </div>
+      <div class="navigasi" style="width: 250px; display: flex; flex-direction: column; align-items: center">
+        <strong>Navigasi</strong>
+        <ul style="list-style: none">
+          <li>Beranda</li>
+          <li>Rental</li>
+          <li>Keunggulan</li>
+          <li>Jenis Mobil</li>
+          <li>Kontak</li>
+          <li>Tentang</li>
+        </ul>
+      </div>
+      <div class="" style="width: 250px; display: flex; flex-direction: column; align-items: center">
+        <strong>Kontak Kami</strong>
+        <ul style="list-style: none">
+          <li>Telepon</li>
+          <li>Instagram</li>
+          <li>Facebook</li>
+          <li>Linkedin</li>
+        </ul>
+      </div>
+    </div>
+
+    <footer style="height: 80px; background-color: #b4ea43; display: flex; justify-content: center; align-items: center">
+      <p>&copy Copyright by @adnan | all assets powered by <a href="https://www.freepik.com" target="_blank">Freepik.com</a></p>
     </footer>
     <script src="script.js"></script>
   </body>
